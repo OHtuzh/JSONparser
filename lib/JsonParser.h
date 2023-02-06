@@ -1,6 +1,6 @@
 #pragma once
 
-#include "IObject.h"
+#include "tyoes/IObject.h"
 
 #include <string>
 #include <filesystem>
