@@ -8,12 +8,10 @@
 #include <memory>
 
 namespace NAME_ME {
-    class IValue;
-
-    typedef std::unordered_map<std::string, std::unique_ptr<IValue>> ObjectType;
-
     class IValue {
      public:
+        using ObjectType = std::unordered_map<std::string, std::unique_ptr<IValue>>;
+
         [[nodiscard]] virtual ValueType::Type GetType() const noexcept = 0;
 
         [[nodiscard]] virtual bool IsNull() const noexcept;

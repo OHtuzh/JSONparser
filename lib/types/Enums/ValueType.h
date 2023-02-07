@@ -14,7 +14,7 @@ namespace NAME_ME {
             kArray,
             kObject
         };
-        
+
         static std::string toString(Type type) noexcept;
     };
 }
